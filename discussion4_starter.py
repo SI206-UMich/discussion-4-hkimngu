@@ -19,7 +19,6 @@ class Rectangle():
         print(f"A rectangle with width {self.width} and height {self.height}")
 
 
-
     # Create the "verify_input" method
     #
     # It returns a boolean
@@ -37,8 +36,10 @@ class Rectangle():
     # It first verifies inputs and return "Invalid input" if they are invalid.
     # Otherwise, it returns the area of the rectangle.
 
-    # YOUR CODE HERE
-
+    def area(self):
+        if not self.verify_input(self):
+            return "Invalid input"
+        return self.width * self.height
 
 
     # Create the "perimeter" method
